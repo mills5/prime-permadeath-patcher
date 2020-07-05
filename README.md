@@ -21,7 +21,7 @@ This patcher will work with your randomized, widescreen modded, etc ISO.
 ### GUI (Windows only) ###
 
 1. Run `prime-permadeath-patcher.exe`.
-2. Select the .iso file you wish to patch.
+2. Select the .iso file you wish to patch or unpatch.
 3. Follow the on-screen instructions.
 
 ### Command Line ###
