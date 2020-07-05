@@ -16,14 +16,14 @@ The European, Japanese, and USA v1.2 releases are not currently supported.
 
 ## How To Use ##
 
-GUI (Windows only)
-------
+### GUI (Windows only) ###
+
 1. Run `prime-permadeath-patcher.exe`.
 2. Select the .iso file you wish to patch.
 3. Follow the on-screen instructions.
 
-Command Line
-------
+### Command Line ###
+
 `prime-permadeath-patcher <input .iso filename> <option>`
 
 Options:
