@@ -14,6 +14,8 @@ A valid Metroid Prime GameCube .ISO file, of one of the below versions supported
 
 The European, Japanese, and USA v1.2 releases are not currently supported.
 
+This patcher will work with your randomized, widescreen modded, etc ISO.
+
 ## How To Use ##
 
 ### GUI (Windows only) ###
