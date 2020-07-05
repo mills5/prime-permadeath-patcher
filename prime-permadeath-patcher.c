@@ -23,8 +23,7 @@ enum
 {
 	PARAM_CHECK = 1 << 1,
 	PARAM_PATCH = 1 << 2,
-	PARAM_UNPATCH = 1 << 3,
-	PARAM_NOGUI = 1 << 4
+	PARAM_UNPATCH = 1 << 3
 };
 
 enum 
@@ -59,7 +58,7 @@ const unsigned char unpatchBytes[2][4] = {
 	{ 0x41, 0x81, 0x03, 0x78 }
 };
 
-const char* validArgs[4] = { "-check", "-patch", "-unpatch", "-nogui" };
+const char* validArgs[4] = { "-check", "-patch", "-unpatch" };
 
 const char* versionStrs[VERSION_COUNT] = { "USA v1.0", "USA v1.1", "USA v1.2", "Europe", "Japan", "Korea" };
 
@@ -74,7 +73,7 @@ int main(int argc, char* argv[]) {
 	unsigned char flgParams = 0;
 	for (int i = 0; i < argc; i++) {
 
-		for (int j = 0; j < 4; j++) {
+		for (int j = 0; j < 3; j++) {
 
 			if (!strcmp(argv[i], validArgs[j])) {
 				flgParams |= 1 << (j + 1);
@@ -413,7 +412,6 @@ void print_help() {
 	printf("Options:		-check   | Check if permadeath patch is installed.\n");
 	printf("			-patch   | Install the permadeath patch.\n");
 	printf("			-unpatch | Remove the permadeath patch.\n");
-	printf("			-nogui   | Do not use GUI (Windows only)\n");
 
 }
 
