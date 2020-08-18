@@ -38,6 +38,6 @@ Install Permadeath Patch AND Disable Saves
 
 `prime-permadeath-patcher metroid_prime.iso 1 1`
 
-Uninstall All Patches / Revert To Vanilla
+Uninstall Both Patches
 
 `prime-permadeath-patcher metroid_prime.iso 0 0`
