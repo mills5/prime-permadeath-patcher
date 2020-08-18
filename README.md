@@ -1,6 +1,8 @@
 # prime-permadeath-patcher #
 
-Patches Metroid Prime 1 for instant player death on any damage taken, and disables saving.
+Patches Metroid Prime 1 for instant death on any damage taken, with the option to disable saves.
+
+![](https://i.imgur.com/EZK3zRZ.gif)
 
 ## Requirements ##
 
@@ -10,30 +12,32 @@ A valid Metroid Prime GameCube .ISO file, of one of the below versions supported
 
 - USA v1.1 (Disc 0, Revision 1)
 
-- Korean   (Disc 0, Revision 48)
-
 The European, Japanese, and USA v1.2 releases are not currently supported.
 
-This patcher will work with your randomized, widescreen modded, etc ISO.
+This patcher will work with .isos that already have other mods, randomizers, patches, etc installed.
 
 ## How To Use ##
 
 ### GUI (Windows only) ###
 
 1. Run `prime-permadeath-patcher.exe`.
-2. Select the .iso file you wish to patch or unpatch.
+2. Select the .iso file you wish to patch or unpatch. The program will automatically detect if the patches are already installed.
 3. Follow the on-screen instructions.
 
 ### Command Line ###
 
-`prime-permadeath-patcher <input .iso filename> <option>`
+`prime-permadeath-patcher <.iso file> <install/remove permadeath... 1|0> <install/remove no-saving... 1|0>`
 
-Options:
+Example Usage:
 
-`-check`	Check if the patch is installed or not.
+Install Permadeath Patch Only, Don't Disable Saves
 
-`-patch`	Install the patch.
+`prime-permadeath-patcher metroid_prime.iso 1 0`
 
-`-unpatch`	Uninstall the patch.
+Install Permadeath Patch AND Disable Saves
 
-Example: `prime-permadeath-patcher metroid_prime.iso -patch`
+`prime-permadeath-patcher metroid_prime.iso 1 1`
+
+Uninstall All Patches / Revert To Vanilla
+
+`prime-permadeath-patcher metroid_prime.iso 0 0`
